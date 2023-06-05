@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="map.js"></script>
+     <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+     <script defer  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyACnwvT1M2hFk53CeKMX2113PEqxE2Lzdw&callback=initMap&libraries=drawing" ></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="map"></div>
+
+    <div class="custom-layer-control">
+        <div class="layer-option" onclick="setMapType('roadmap')">
+            <img class="images" src="https://images.unsplash.com/photo-1584972191378-d70853fc47fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8Z29vZ2xlJTIwbWFwfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60" alt="Roadmap">
+            <span>Roadmap</span>
+        </div>
+        <div class="layer-option" onclick="setMapType('satellite')">
+            <img class="images" src="https://images.unsplash.com/photo-1558677976-54b5a5bac6d7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGdvb2dsZSUyMG1hcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Satellite">
+            <span>Satellite</span>
+        </div>
+        <div class="layer-option" onclick="setMapType('hybrid')">
+            <img class="images" src="https://images.unsplash.com/photo-1465447142348-e9952c393450?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGdvb2dsZSUyMG1hcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="Hybrid">
+            <span>Hybrid</span>
+        </div>
+        <div class="layer-option" onclick="setMapType('terrain')">
+            <img class="images" src="https://media.istockphoto.com/id/1287065311/photo/blue-landscape-of-glowing-particles.webp?b=1&s=170667a&w=0&k=20&c=4OqkpJUZTVYPvYzGYybDFmVSyrUKu2OLbyAxAKcXrGc=" alt="Terrain">
+            <span>Terrain</span>
+        </div>
+    
+</body>
+
+
+
+
+</html>
+
+
